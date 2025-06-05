@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "migrate": "knex migrate:latest",
+    "migrate:make": "knex migrate:make --ts",
+    "seed": "knex seed:run",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "convict": "^6.2.4",
+    "dotenv": "^16.4.5",
+    "knex": "^3.1.0",
+    "objection": "^3.1.4",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/convict": "^6.1.6",
+    "@types/knex": "^0.15.2",
+    "@types/node": "^20.17.32",
+    "@types/pg": "^8.10.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
